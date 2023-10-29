@@ -1,0 +1,56 @@
+{
+    "simulation_setting": {
+        "IFS": 0.0010725843297826635,
+        "dt": 1e-3,
+        "frames_per_clip": 150,
+        "n_grid": 71,
+        "uniform_scaling_factor": 1,
+        "n_model_particles_generated": 6500,
+        "n_operator_model_particles_generated": 500,
+        "n_container_model_particles_generated": 500
+    },
+    "scene_information": {
+        "container_diameter": 0.095,
+        "container_height": 0.18,
+        "container_wall_thickness": 0.003,
+        "liquid_height": 0.125,
+        "operator_bottom_height": 0.02,
+        "operator_radius": 0.0125,
+        "operator_length": 0.2,
+        "liquid_density": 1650,
+        "operator_density": 770,
+        "container_density": 1000
+    },
+    "learning_setting": {
+        "constitutive_parameters_setting": {
+            "E": {
+                "lower_bound": 100,
+                "upper_bound": 300000
+            },
+            "nu": {
+                "lower_bound": 0.05,
+                "upper_bound": 0.35
+            },
+            "yield_stress": {
+                "lower_bound": 100,
+                "upper_bound": 500000
+            },
+            "viscosity_d": {
+                "lower_bound": 100,
+                "upper_bound": 500000
+            },
+            "viscosity_v": {
+                "lower_bound": 100,
+                "upper_bound": 500000
+            },
+            "non_equilibrated_E": {
+                "lower_bound": 100,
+                "upper_bound": 30000
+            },
+            "non_equilibrated_nu": {
+                "lower_bound": 0.05,
+                "upper_bound": 0.35
+            }
+        }
+    }
+}
